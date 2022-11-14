@@ -22,27 +22,24 @@
 [8.Desarrollo Proyecto](#Desarrollo-Proyecto)
 
 # Introducción
-Los laboratorios tienen una labor muy importante en el gestionamiento de todos los materiales, reactivos y equipos. Por un lado, los equipos de laboratorio son extremadamente delicados y requieren de cuidados específicos. En cuanto a los materiales de los laboratorios el problema radica en su gran cantidad y en la fragilidad de algunos materiales. Por último, se encuentran los reactivos, punto que es fundamental y por lo cual se debe tener una gestión eficiente y adecuada, debido a que se deben controlar y supervisar todos los reactivos que sean peligrosos y que puedan apelar contra la salud y la integridad de cualquier persona que haga uso del laboratorio. 
-Cada laboratorio debe tener un sistema de base de datos donde se realiza la gestión del inventario, siendo una de las partes fundamentales y más complejas, debido a que cada vez que se usa un reactivo, se realiza mantenimiento a un equipo, se producen salidas o entradas de las sustancias o equipos, se debe actualizar el inventario con el fin de llevar un control total del laboratorio, volviéndose un proceso repetitivo y complejo.   
+Para un supermercado es crucial llevar un control de lo que se tiene en bodega para poder vender correctamente sus productos a los clientes. 
 
-Es por esto que se decidió desarrollar un programa  para el control de inventarios que permita gestionar entradas y salidas de los diferentes equipos y reactivos para poder gestionar los inventarios de una forma más eficiente. 
+Para este supermercado se tiene una aplicación que cuenta con un 'Login' para que los roles de administrador puedan ver, modificar, añadir y eliminar productos según corresponda. Sin embargo, hay otra opción de ingresar como invitado y solo visualizar los productos que existan en stock. Al final de cada uno de estos se podrá generar una factura en caso de que el usuario desee ver los productos que quiera adquirir.
 
 # Herramientas usadas para la solución
 <h2>C#</h2>
-La primer  herramienta utilizada, será el lenguaje de programación Python. Este lenguaje se eligió debido a que es uno de los lenguajes de programación más actuales y de los más sencillos de usar, debido a que este posse una sintaxis simple y de fácil aprenidzaje. Además de esto es un lenguaje muy productivo y es de código abierte, por lo que ofrece muchas ventajas para este proyecto. 
+Se utilizó el lenguaje de programación C# porque es uno de los más compatibles con Visual Studio. Las principales ventajas que presenta el uso C# en comparación con otros lenguajes es su potencia como lenguaje, pero también su flexibilidad.
 
-![c.jpg](https://www.softzone.es/app/uploads-softzone.es/2021/04/Programacion-Visual-Studio.jpg)
- <img src="https://www.softzone.es/app/uploads-softzone.es/2021/04/Programacion-Visual-Studio.jpg" width="300">
-
+ <img src="https://www.softzone.es/app/uploads-softzone.es/2021/04/Programacion-Visual-Studio.jpg" width="500">
 
 <h2> Visual Studio </h2> 
 
-Se va a utilizar el editor de texto Visual Studio Code, esto debido a que es un editor de texto fácil de usar, el cual es multiplataforma, desarrollado por Microsoft por lo que es gratuito y de código abierto siendo esta una herramienta de programación avanzada.
+Se usó la herramienta de texto Visual Studio que facilita la creación de formularios e interfaces gráficas para luego realizar el código de acuerdo a las especificaciones del proyecto
 
 ![visualcode.jpg](https://www.uniempresarial.edu.co/wp-content/uploads/2020/10/Programacion-con-Visual-C.jpg)
 
 <h2> Microsoft SQL server Management Studio </h2> 
 
-Se va a utilizar el editor de texto Visual Studio Code, esto debido a que es un editor de texto fácil de usar, el cual es multiplataforma, desarrollado por Microsoft por lo que es gratuito y de código abierto siendo esta una herramienta de programación avanzada.
+Como servidor de bases de datos se tiene Microsoft SQL server, el cual permite almacenar información en bases de datos y realizar la conexión directa con Visual Studio.
 
 ![visualcode.jpg](https://miro.medium.com/max/402/1*KTDZHTVaVbvbyhIf2PmBAw.png)
