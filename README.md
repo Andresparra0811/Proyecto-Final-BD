@@ -31,17 +31,17 @@ Es por esto que se decidió desarrollar un programa  para el control de inventar
 <h2>C#</h2>
 La primer  herramienta utilizada, será el lenguaje de programación Python. Este lenguaje se eligió debido a que es uno de los lenguajes de programación más actuales y de los más sencillos de usar, debido a que este posse una sintaxis simple y de fácil aprenidzaje. Además de esto es un lenguaje muy productivo y es de código abierte, por lo que ofrece muchas ventajas para este proyecto. 
 
-![c.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.uniempresarial.edu.co%2Feducacion-continua-antigua%2Fprogramacion-con-visual-c%2F&psig=AOvVaw1fBSKgAfHInZ02HFLILE4p&ust=1668537048972000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNCbyYKnrvsCFQAAAAAdAAAAABAT)
+![c.jpg](https://www.softzone.es/app/uploads-softzone.es/2021/04/Programacion-Visual-Studio.jpg)
 
 
 <h2> Visual Studio </h2> 
 
 Se va a utilizar el editor de texto Visual Studio Code, esto debido a que es un editor de texto fácil de usar, el cual es multiplataforma, desarrollado por Microsoft por lo que es gratuito y de código abierto siendo esta una herramienta de programación avanzada.
 
-![visualcode.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.softzone.es%2Fnoticias%2Fprogramas%2Fvisual-studio-2022-64-bits%2F&psig=AOvVaw33oynN0GutHaifSiP_H2HP&ust=1668537107962000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCODS0J6nrvsCFQAAAAAdAAAAABAE)
+![visualcode.jpg](https://www.uniempresarial.edu.co/wp-content/uploads/2020/10/Programacion-con-Visual-C.jpg)
 
 <h2> Microsoft SQL server Management Studio </h2> 
 
 Se va a utilizar el editor de texto Visual Studio Code, esto debido a que es un editor de texto fácil de usar, el cual es multiplataforma, desarrollado por Microsoft por lo que es gratuito y de código abierto siendo esta una herramienta de programación avanzada.
 
-![visualcode.jpg](https://programacion.net/files/article/20170630010634_visual-studio-code.png)
+![visualcode.jpg](https://miro.medium.com/max/402/1*KTDZHTVaVbvbyhIf2PmBAw.png)
