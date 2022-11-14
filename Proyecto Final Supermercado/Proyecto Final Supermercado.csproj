@@ -106,5 +106,14 @@
   <ItemGroup>
     <None Include="Resources\bloquear.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinterest_profile_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_cover_photo_1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
