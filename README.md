@@ -32,6 +32,7 @@ Es por esto que se decidió desarrollar un programa  para el control de inventar
 La primer  herramienta utilizada, será el lenguaje de programación Python. Este lenguaje se eligió debido a que es uno de los lenguajes de programación más actuales y de los más sencillos de usar, debido a que este posse una sintaxis simple y de fácil aprenidzaje. Además de esto es un lenguaje muy productivo y es de código abierte, por lo que ofrece muchas ventajas para este proyecto. 
 
 ![c.jpg](https://www.softzone.es/app/uploads-softzone.es/2021/04/Programacion-Visual-Studio.jpg)
+ <img src="https://www.softzone.es/app/uploads-softzone.es/2021/04/Programacion-Visual-Studio.jpg" width="300">
 
 
 <h2> Visual Studio </h2> 
