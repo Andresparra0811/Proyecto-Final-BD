@@ -31,17 +31,20 @@ Para este supermercado se tiene una aplicación que cuenta con un 'Login' para q
 Se utilizó el lenguaje de programación C# porque es uno de los más compatibles con Visual Studio. Las principales ventajas que presenta el uso C# en comparación con otros lenguajes es su potencia como lenguaje, pero también su flexibilidad.
 
 
-
-<img src="https://www.uniempresarial.edu.co/wp-content/uploads/2020/10/Programacion-con-Visual-C.jpg" width="300" align="center">
+<p align="center">
+<img src="https://www.uniempresarial.edu.co/wp-content/uploads/2020/10/Programacion-con-Visual-C.jpg" width="300">
+</p>
 <h2> Visual Studio </h2> 
 
 Se usó la herramienta de texto Visual Studio que facilita la creación de formularios e interfaces gráficas para luego realizar el código de acuerdo a las especificaciones del proyecto
 
 <p align="center">
- <img src="https://www.softzone.es/app/uploads-softzone.es/2021/04/Programacion-Visual-Studio.jpg" width="500" align="center">
+ <img src="https://www.softzone.es/app/uploads-softzone.es/2021/04/Programacion-Visual-Studio.jpg" width="500">
 </p>
 <h2> Microsoft SQL server Management Studio </h2> 
 
 Como servidor de bases de datos se tiene Microsoft SQL server, el cual permite almacenar información en bases de datos y realizar la conexión directa con Visual Studio.
 
-<img src="https://miro.medium.com/max/402/1*KTDZHTVaVbvbyhIf2PmBAw.png" width="250" align="center">
+<p align="center">
+<img src="https://miro.medium.com/max/402/1*KTDZHTVaVbvbyhIf2PmBAw.png" width="250">
+</p>
