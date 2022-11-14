@@ -37,8 +37,9 @@ Se utilizó el lenguaje de programación C# porque es uno de los más compatible
 
 Se usó la herramienta de texto Visual Studio que facilita la creación de formularios e interfaces gráficas para luego realizar el código de acuerdo a las especificaciones del proyecto
 
+<p>
  <img src="https://www.softzone.es/app/uploads-softzone.es/2021/04/Programacion-Visual-Studio.jpg" width="500" align="center">
-
+</p>
 <h2> Microsoft SQL server Management Studio </h2> 
 
 Como servidor de bases de datos se tiene Microsoft SQL server, el cual permite almacenar información en bases de datos y realizar la conexión directa con Visual Studio.
