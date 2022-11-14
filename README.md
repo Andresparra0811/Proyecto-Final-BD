@@ -1,5 +1,3 @@
-# Proyecto-Final-BD
-
 <h1 align="center">Proyecto Final Base de datos</h1>
 <h2 align="center"> NOMBRE</h2>
 <h3 align="center"> Programa hecho para el control y registro de inventario de un supermercado</h3>
