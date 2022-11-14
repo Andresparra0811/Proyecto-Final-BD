@@ -103,11 +103,17 @@ La metodología SCRUM se compone de diferentes etapas.
 
 ### A continuación se expondrá el desarrollo y la demostración del proyecto:
 
+<p align="center">
+<img src="" width="500">
+</p>
 
 ???
 
 ### Inicio Invitado
 
+<p align="center">
+<img src="" width="500">
+</p>
 
 ??
 
@@ -115,11 +121,19 @@ En dado caso que ya se dese iniciar sesión, en cada una de las pestañas mencio
 
 ### Acceso Satisfactorio
 
+<p align="center">
+<img src="" width="500">
+</p>
+
 ???
 
 Una vez que el usuario ingrese este logrará ver las diferentes opciones para modificar el inventario de laboratorio, cada una de las pestañas dejará al usuario autorizado insertar, eliminar o modificar un dato de una manera eficiente como se demuestra a continuación
 
 ### Inicio Admin
+
+<p align="center">
+<img src="" width="500">
+</p>
 
 ??
 
@@ -127,11 +141,16 @@ Una vez que el usuario ingrese este logrará ver las diferentes opciones para mo
 Además si el usuario desea buscar un archivo una vez que ingrese a la pestaña de buscar esta lo redirigirá a la ventana de busqueda la cual es la misma que la de busqueda de invitado, sin embargo, si se ingresa a esta ventana una vez ya se ha iniciado sesión el programa ya no le dirá al usuario que inicie sesión sino le mostrará un botón de volver para que el usuario pueda volver a la ventana de modificación inmediatamente
 
 ### Búsqueda Admin
-![adminbusc.png](https://github.com/Stepha-gon/ProyectoFinalBD/blob/main/imagit/adminbusc.png)
+
+<p align="center">
+<img src="" width="500">
+</p>
 
 Finalmente tanto para vista invitado como para la vista de Admin la última pestaña que se verá en el programa es la venta autor, donde se verán los respectivos créditos y detalles de quien realizó el proyecto
 
-
+<p align="center">
+<img src="" width="500">
+</p>
 
 ### Conclusiones 
 
