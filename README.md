@@ -100,7 +100,7 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 • Mejora continua del proceso integrada. <br>
 
 <p align="center">
-<img src="Img/M-Agil" width="400">
+<img src="Img/M-Agil.png" width="400">
 </p>
 
 # Desarrollo Proyecto
