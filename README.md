@@ -19,7 +19,9 @@
 
 [7. Metología usada](#metodologia-usada)
 
-[8.Desarrollo Proyecto](#Desarrollo-Proyecto)
+[8. Desarrollo Proyecto](#Desarrollo-Proyecto)
+
+[9. Conclusiones](#Conclusiones)
 
 # Introducción
 Para un supermercado es crucial llevar un control de lo que se tiene en bodega para poder vender correctamente sus productos a los clientes. 
