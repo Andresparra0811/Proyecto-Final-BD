@@ -90,14 +90,14 @@ El modelo entidad-relación del proyecto se muestra a continuación:
 
 El proyecto utilizará la metodología ágil, ya que con estos métodos es posible adaptar los estilos de trabajo y las condiciones del proyecto, utilizar métodos flexibles para realizar mejoras y aumentar la satisfacción del cliente. A continuación, se mencionarán algunas características de la metodología ágil:
 
-• Es util para proyectos pequeños de poco riesgo.
-• Mínima cantidad de reglas y documentación.
-• Participación continua de los evaluadores.
-• Es fácil incorporar cambios en el producto.
-• Depende en gran medida de la interacción de las partes interesadas.
-• Fácil de gestionar.
-• Entrega anticipada de soluciones parciales.
-• Mejora continua del proceso integrada
+• Es util para proyectos pequeños de poco riesgo. <br>
+• Mínima cantidad de reglas y documentación. <br>
+• Participación continua de los evaluadores. <br>
+• Es fácil incorporar cambios en el producto. <br>
+• Depende en gran medida de la interacción de las partes interesadas.<br>
+• Fácil de gestionar. <br>
+• Entrega anticipada de soluciones parciales.<br> 
+• Mejora continua del proceso integrada. <br>
 
 <p align="center">
 <img src="Img/M-Agil" width="400">
