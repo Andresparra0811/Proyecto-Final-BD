@@ -56,13 +56,13 @@ Como servidor de bases de datos se tiene Microsoft SQL server, el cual permite a
 
 # Interfaz gráfica
 
-El proyecto va a constar de diferentes secciones. En primer lugar va a constar de dos diferentes ingresos al inventario; El usuario puede ingresar al sistema como invitado para únicamente revisar el inventario y buscar los productos o puede iniciar sesión para poder modificar, eliminar e insertar los materiales en el inventario del laboratorio. 
+La interfaz inicia con un login de usuario y contraseña para poder ingresar al menú principal y solo los usuarios que esten registrados van a poder añadir, modificar y eliminar los productos.
 
 <p align="center">
-<img src="" width="500">
+<img src="Img/login.png" width="250">
 </p>
 
-En caso de que el usuario ingrese como invitado logrará navegar por el inventario y podrá buscar los productos para ver la información de cada uno, sin embargo, no tendrá permiso de insertar, eliminar o modificar ningún producto del laboratorio
+En caso de que el usuario ingrese como invitado logrará navegar por el inventario y podrá buscar los productos para ver la información de cada uno, sin embargo, no tendrá permiso de insertar, eliminar o modificar ningún producto del supermercado.
 
 <p align="center">
 <img src="" width="500">
@@ -75,7 +75,7 @@ En caso de que el usuario ingrese como invitado logrará navegar por el inventar
 El modelo entidad-relación del proyecto se muestra a continuación:
 
 <p align="center">
-<img src="" width="500">
+<img src="Img/MER.png" width="700">
 </p>
 
 # Arquitectura de Software
