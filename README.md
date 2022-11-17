@@ -59,7 +59,7 @@ Como servidor de bases de datos se tiene Microsoft SQL server, el cual permite a
 La interfaz inicia con un login de usuario y contraseña para poder ingresar al menú principal y solo los usuarios que esten registrados van a poder añadir, modificar y eliminar los productos.
 
 <p align="center">
-<img src="Img/login.png" width="500">
+<img src="Img/login.png" width="250">
 </p>
 
 En caso de que el usuario ingrese como invitado logrará navegar por el inventario y podrá buscar los productos para ver la información de cada uno, sin embargo, no tendrá permiso de insertar, eliminar o modificar ningún producto del supermercado.
@@ -75,7 +75,7 @@ En caso de que el usuario ingrese como invitado logrará navegar por el inventar
 El modelo entidad-relación del proyecto se muestra a continuación:
 
 <p align="center">
-<img src="Img/MER.png" width="500">
+<img src="Img/MER.png" width="700">
 </p>
 
 # Arquitectura de Software
