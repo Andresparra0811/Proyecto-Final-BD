@@ -89,7 +89,17 @@ namespace Proyecto_Final_Supermercado
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            if (txtID.Text == "0")
+            {
+                if (MessageBox.Show("¿Deseas registrar el libro " + txtnombre.Text + "?", "Mensaje",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                {
 
+                    CUD("1");
+                    limpiar();
+                }
+
+            }
         }
 
         private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
@@ -146,6 +156,22 @@ namespace Proyecto_Final_Supermercado
                 {
 
                     CUD("2");
+                    limpiar();
+                }
+
+
+            }
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            if (txtID.Text != "")
+            {
+                if (MessageBox.Show("¿Deseas eliminar el libro " + txtnombre.Text + "?", "Mensaje",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                {
+
+                    CUD("3");
                     limpiar();
                 }
 
