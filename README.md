@@ -53,8 +53,7 @@ Como servidor de bases de datos se tiene Microsoft SQL server, el cual permite a
 
 
 # Necesidad
-
-??
+El proyecto se crea a partir de la necesidad de tener un control de gestión de inventarios para poder manejar el stock de los diferentes productos además de generar una serie de facturas que facilitaran las operaciones de logística y facturación del supermercado.
 
 # Interfaz gráfica
 
@@ -67,7 +66,8 @@ La interfaz inicia con un login de usuario y contraseña para poder ingresar al 
 En caso de que el usuario ingrese como invitado logrará navegar por el inventario y podrá buscar los productos para ver la información de cada uno, sin embargo, no tendrá permiso de insertar, eliminar o modificar ningún producto del supermercado.
 
 <p align="center">
-<img src="" width="500">
+<img src="![image](https://user-images.githubusercontent.com/110069461/203174142-a6f23b57-ac22-4086-862c-60c6ee65e05e.png)
+" width="500">
 </p>
 
 
