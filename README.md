@@ -70,7 +70,7 @@ En caso de que el usuario ingrese como invitado logrará navegar por el inventar
 <img src="" width="500">
 </p>
 
-???
+
 
 # MER
 
@@ -101,7 +101,7 @@ En esta capa encontramos los procedimientos almacenados que se van a utilizar en
 </p>
 
 <h2>Capa Presentacion</h2>
-En esta capa encontramos los procedimientos almacenados que se van a utilizar en la capa de negocios.Esta capa cuenta con una referencia a la clase lógica
+La capa de presentación es la que ve el usuario , presenta el sistema al usuario, le comunica la información y captura la información del usuario en un mínimo proceso. 
 <p align="center">
 <img src="" width="500">
 </p>
@@ -125,13 +125,7 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 
 # Desarrollo Proyecto
 
-### A continuación se expondrá el desarrollo y la demostración del proyecto:
 
-<p align="center">
-<img src="" width="500">
-</p>
-
-???
 
 ### Inicio Invitado
 
@@ -139,10 +133,7 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 <img src="" width="500">
 </p>
 
-??
-
-??
-
+En el inicio de sesión como invitado se muestra como se deshabilitan algunos botones debido a los permisos del usuario.
 
 ### Acceso Satisfactorio
 
@@ -150,9 +141,7 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 <img src="" width="500">
 </p>
 
-???
-
-??
+Cuando se ingresa un usuario adecuado se muestra el nombre del usuario en la parte superior junto con todos los botones habilitados
 
 ### Inicio Admin
 
@@ -160,10 +149,7 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 <img src="" width="500">
 </p>
 
-??
-
-
-??
+Cuando se inicia sesión como administrador el usuario cuenta con todos los botones habilitados 
 
 ### Búsqueda Admin
 
@@ -171,7 +157,7 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 <img src="" width="500">
 </p>
 
-??
+Se puede observar como busca los productos por coincidencia en el valor ingresado
 
 <p align="center">
 <img src="" width="500">
@@ -180,7 +166,7 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 ### Conclusiones 
 
 Gracias al programa desarrollado se llegó a las siguientes conclusiones:<br>
-•	?? <br>
-•	?? <br>
-•	?? <br>
+•	La arquitectura de 3 capas facilita el diseño y desarrollo de programas cliente-servidor. <br>
+•	El uso de bases de datos contribuye al business intelligence <br>
+•	Visual estudio facilita la creación de aplicaciones de escritorio <br>
 
