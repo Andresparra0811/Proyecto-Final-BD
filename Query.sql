@@ -38,7 +38,7 @@ CREATE TABLE Usuario
     (
      ID INTEGER identity NOT NULL , 
      Nombre_usuario VARCHAR (100) NOT NULL , 
-     Contrase�a VARCHAR (100) NOT NULL 
+     Contrasena VARCHAR (100) NOT NULL 
 	 primary key(ID)
     )
 GO
@@ -60,7 +60,7 @@ create procedure spLogin
  as
  begin
 	select top 1 COUNT(*) from Usuario
-	where usuario.Nombre_usuario = @usuario and Usuario.Contrase�a = @pass
+	where usuario.Nombre_usuario = @usuario and Usuario.Contrasena = @pass
 
 end
 go
