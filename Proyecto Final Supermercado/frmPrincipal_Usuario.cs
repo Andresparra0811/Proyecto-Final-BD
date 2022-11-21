@@ -11,15 +11,42 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 using Capa_Logica;
 using Capa_presentacion;
+using System.Runtime.Remoting;
 
 namespace Proyecto_Final_Supermercado
 {
     public partial class frmPrincipal_Usuario : Form
     {
+        ClaseLogica objlog = new ClaseLogica();
+        ClasePresentacion objpres = new ClasePresentacion();
         public frmPrincipal_Usuario()
         {
             InitializeComponent();
         }
+
+        void CUD(string accion)
+        {
+            objlog.accion = accion;
+            objlog.ID_producto = Convert.ToInt32(txtID.Text);
+            objlog.Nombre = txtnombre.Text;
+            objlog.Cantidad = Convert.ToInt32(txtcantidad.Text);
+            objlog.ID_factura = Convert.ToInt32(txtfactura.Text);
+            string men = objpres.N_CUD(objlog);
+            MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+        void limpiar()
+        {
+            txtID.Text = "0";
+            txtnombre.Text = "";
+            txtcantidad.Text = "0";
+            txtfactura.Text = "";
+            dataGridView1.DataSource = objpres.N_listar_productos();
+        }
+
+
+
+
 
 
         private void frmPrincipal_Usuario_Load(object sender, EventArgs e)
@@ -44,6 +71,7 @@ namespace Proyecto_Final_Supermercado
                 btnNuevo.Enabled = true;
                 labelUsuario.Text = user;
             }
+            dataGridView1.DataSource = objpres.N_listar_productos();
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
@@ -87,6 +115,42 @@ namespace Proyecto_Final_Supermercado
             txtcantidad.Text = dataGridView1[2, fila].Value.ToString();
             txtfactura.Text = dataGridView1[3, fila].Value.ToString();
 
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (txtbusqueda.Text != "")
+            {
+                objlog.Nombre = txtnombre.Text;
+                DataTable dt = new DataTable();
+                dt = objpres.N_buscar_producto(objlog);
+                dataGridView1.DataSource = dt;
+            }
+            else
+            {
+                dataGridView1.DataSource = objpres.N_listar_productos();
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (txtID.Text != "")
+            {
+                if (MessageBox.Show("¿Deseas modificar el libro " + txtnombre.Text + "?", "Mensaje",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                {
+
+                    CUD("2");
+                    limpiar();
+                }
+
+
+            }
         }
     }
 }
