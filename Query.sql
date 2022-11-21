@@ -88,17 +88,17 @@ CREATE procedure pa_CUD
  @ID_Producto int,
  @Nombre varchar (150),
  @Cantidad tinyint,
- @Factura_ID_Factura int,
+ @Proveedor varchar (150),
  @accion varchar (50) OUTPUT
 as
 if (@accion='1')
 begin
-    insert into Producto values (@Nombre, @Cantidad, @Factura_ID_Factura)
+    insert into Producto values (@Nombre, @Cantidad, @Proveedor)
     set @accion = 'Se inserto correctamente'
 end
 else if (@accion='2')
 begin
-    update Producto set Nombre = @Nombre, Cantidad = @Cantidad, FK_ID_Factura = @Factura_ID_Factura
+    update Producto set Nombre = @Nombre, Cantidad = @Cantidad, Proveedor = @Proveedor
     where ID_Producto = @ID_Producto
     set @accion = 'Se actualizo correctamente'
 end
