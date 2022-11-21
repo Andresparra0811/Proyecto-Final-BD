@@ -82,8 +82,26 @@ El modelo entidad-relación del proyecto se muestra a continuación:
 
 # Arquitectura de Software
 
-??
+Se utilizó la arquitectura de software en 3 capas. Este con el fín de separar las aplicacipnes en 3 niveles de forma lógica y física. Es una arquitectura ideal para aplicaciones cliente-servidor tradicionales
 
+<p align="center">
+<img src="" width="500">
+</p>
+
+<h2>Capa Logica</h2>
+En esta capa encontramos las columnas de la tabla producto para poder utilizar estos datos en la capa datos.
+<p align="center">
+<img src="" width="500">
+</p>
+
+<h2>Capa Datos</h2>
+En esta capa encontramos los procedimientos almacenados que se van a utilizar en la capa de negocios.Esta capa cuenta con una referencia a la clase lógica
+<p align="center">
+<img src="" width="500">
+</p>
+
+<h2>Capa Presentacion</h2>
+En esta capa encontramos los procedimientos almacenados que se van a utilizar en la capa de negocios.Esta capa cuenta con una referencia a la clase lógica
 <p align="center">
 <img src="" width="500">
 </p>
