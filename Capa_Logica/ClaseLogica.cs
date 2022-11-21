@@ -13,5 +13,7 @@ namespace Capa_Logica
         public int Cantidad { get; set; }
 
         public int ID_factura { get; set; }
+
+        public string accion { get; set; }
     }
 }
