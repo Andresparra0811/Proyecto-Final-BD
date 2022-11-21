@@ -1,3 +1,9 @@
+  Create database Supermercado
+  Go
+  
+  use Supermercado
+  go
+  
   CREATE TABLE Factura 
     (
      ID_Factura INTEGER identity NOT NULL , 
@@ -32,7 +38,7 @@ CREATE TABLE Usuario
     (
      ID INTEGER identity NOT NULL , 
      Nombre_usuario VARCHAR (100) NOT NULL , 
-     Contraseña VARCHAR (100) NOT NULL 
+     Contraseï¿½a VARCHAR (100) NOT NULL 
 	 primary key(ID)
     )
 GO
@@ -54,7 +60,7 @@ create procedure spLogin
  as
  begin
 	select top 1 COUNT(*) from Usuario
-	where usuario.Nombre_usuario = @usuario and Usuario.Contraseña = @pass
+	where usuario.Nombre_usuario = @usuario and Usuario.Contraseï¿½a = @pass
 
 end
 go
