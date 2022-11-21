@@ -53,12 +53,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInvitado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmInvitado.Designer.cs">
-      <DependentUpon>frmInvitado.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmPrincipal_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,9 +64,6 @@
     <Compile Include="SQL-Control Login.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmInvitado.resx">
-      <DependentUpon>frmInvitado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal_Usuario.resx">
       <DependentUpon>frmPrincipal_Usuario.cs</DependentUpon>
@@ -114,6 +105,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\facebook_cover_photo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa_Logica\Capa_Logica.csproj">
+      <Project>{72318efd-cbfa-4891-9030-17344323ac8e}</Project>
+      <Name>Capa_Logica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa_presentacion\Capa_presentacion.csproj">
+      <Project>{3dc64577-bc67-4c70-9fd9-bc2284af1f16}</Project>
+      <Name>Capa_presentacion</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

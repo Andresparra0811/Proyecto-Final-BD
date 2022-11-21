@@ -13,7 +13,7 @@ namespace Capa_presentacion
     {
         ClaseDatos objd = new ClaseDatos();
 
-        public DataTable N_listar_libros()
+        public DataTable N_listar_productos()
         {
             return objd.D_listar_productos();
 

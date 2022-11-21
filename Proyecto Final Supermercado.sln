@@ -5,6 +5,12 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto Final Supermercado", "Proyecto Final Supermercado\Proyecto Final Supermercado.csproj", "{E0D1CB32-5EAF-47D8-9191-6F3C33C1005F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_Datos", "Capa_Datos\Capa_Datos.csproj", "{93991B97-2758-4A1E-985E-810AE3DAC66F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_Logica", "Capa_Logica\Capa_Logica.csproj", "{72318EFD-CBFA-4891-9030-17344323AC8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_presentacion", "Capa_presentacion\Capa_presentacion.csproj", "{3DC64577-BC67-4C70-9FD9-BC2284AF1F16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{E0D1CB32-5EAF-47D8-9191-6F3C33C1005F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0D1CB32-5EAF-47D8-9191-6F3C33C1005F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0D1CB32-5EAF-47D8-9191-6F3C33C1005F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93991B97-2758-4A1E-985E-810AE3DAC66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93991B97-2758-4A1E-985E-810AE3DAC66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93991B97-2758-4A1E-985E-810AE3DAC66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93991B97-2758-4A1E-985E-810AE3DAC66F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72318EFD-CBFA-4891-9030-17344323AC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72318EFD-CBFA-4891-9030-17344323AC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72318EFD-CBFA-4891-9030-17344323AC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72318EFD-CBFA-4891-9030-17344323AC8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC64577-BC67-4C70-9FD9-BC2284AF1F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC64577-BC67-4C70-9FD9-BC2284AF1F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC64577-BC67-4C70-9FD9-BC2284AF1F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC64577-BC67-4C70-9FD9-BC2284AF1F16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
