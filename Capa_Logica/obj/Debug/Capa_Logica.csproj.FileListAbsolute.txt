@@ -1,0 +1,6 @@
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_Logica\bin\Debug\Capa_Logica.dll
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_Logica\bin\Debug\Capa_Logica.pdb
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_Logica\obj\Debug\Capa_Logica.csproj.AssemblyReference.cache
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_Logica\obj\Debug\Capa_Logica.csproj.CoreCompileInputs.cache
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_Logica\obj\Debug\Capa_Logica.dll
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_Logica\obj\Debug\Capa_Logica.pdb

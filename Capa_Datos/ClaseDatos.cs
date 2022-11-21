@@ -46,7 +46,8 @@ namespace Capa_Datos
             cmd.Parameters.AddWithValue("@Nombre", objeto.Nombre);
             cmd.Parameters.AddWithValue("@Cantidad", objeto.Cantidad);
             cmd.Parameters.AddWithValue("@Factura_ID_Factura", objeto.ID_factura);
-      
+            
+
 
             cmd.Parameters.Add("@accion", SqlDbType.VarChar, 50).Value = objeto.accion;
             cmd.Parameters["@accion"].Direction = ParameterDirection.InputOutput;

@@ -24,3 +24,22 @@ C:\Users\Familia Parra Godoy\Desktop\ProyectoFinal\Proyecto-Final-BD\Proyecto Fi
 C:\Users\Familia Parra Godoy\Desktop\ProyectoFinal\Proyecto-Final-BD\Proyecto Final Supermercado\obj\Debug\Proyecto Final Supermercado.csproj.CoreCompileInputs.cache
 C:\Users\Familia Parra Godoy\Desktop\ProyectoFinal\Proyecto-Final-BD\Proyecto Final Supermercado\obj\Debug\Proyecto Final Supermercado.exe
 C:\Users\Familia Parra Godoy\Desktop\ProyectoFinal\Proyecto-Final-BD\Proyecto Final Supermercado\obj\Debug\Proyecto Final Supermercado.pdb
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\bin\Debug\Proyecto Final Supermercado.exe.config
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\bin\Debug\Proyecto Final Supermercado.exe
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\bin\Debug\Proyecto Final Supermercado.pdb
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\bin\Debug\Capa_Logica.dll
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\bin\Debug\Capa_presentacion.dll
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\bin\Debug\Capa_Datos.dll
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\bin\Debug\Capa_Logica.pdb
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\bin\Debug\Capa_presentacion.pdb
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\bin\Debug\Capa_Datos.pdb
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\obj\Debug\Proyecto Final Supermercado.csproj.AssemblyReference.cache
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\obj\Debug\Proyecto Final Supermercado.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\obj\Debug\Proyecto_Final_Supermercado.FormLogin.resources
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\obj\Debug\Proyecto_Final_Supermercado.frmPrincipal_Usuario.resources
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\obj\Debug\Proyecto_Final_Supermercado.Properties.Resources.resources
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\obj\Debug\Proyecto Final Supermercado.csproj.GenerateResource.cache
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\obj\Debug\Proyecto Final Supermercado.csproj.CoreCompileInputs.cache
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\obj\Debug\Proyecto Final Supermercado.csproj.CopyComplete
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\obj\Debug\Proyecto Final Supermercado.exe
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Proyecto Final Supermercado\obj\Debug\Proyecto Final Supermercado.pdb

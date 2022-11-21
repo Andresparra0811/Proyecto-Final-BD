@@ -1,0 +1,11 @@
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\bin\Debug\Capa_presentacion.dll
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\bin\Debug\Capa_presentacion.pdb
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\bin\Debug\Capa_Datos.dll
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\bin\Debug\Capa_Logica.dll
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\bin\Debug\Capa_Datos.pdb
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\bin\Debug\Capa_Logica.pdb
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\obj\Debug\Capa_presentacion.csproj.AssemblyReference.cache
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\obj\Debug\Capa_presentacion.csproj.CoreCompileInputs.cache
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\obj\Debug\Capa_presentacion.csproj.CopyComplete
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\obj\Debug\Capa_presentacion.dll
+C:\Users\PC DanielAlf\Desktop\Universidad\Semestre 6\Bases de datos\BD corte4\Proyecto Final\Proyecto Final Supermercado - v3\Capa_presentacion\obj\Debug\Capa_presentacion.pdb

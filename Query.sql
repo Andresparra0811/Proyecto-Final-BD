@@ -9,7 +9,6 @@
      ID_Factura INTEGER identity NOT NULL , 
      Fecha_Generada_Factura DATE NOT NULL , 
      Productos VARCHAR (max) NOT NULL , 
-     Usuario_ID INTEGER NOT NULL 
 	 primary key(ID_Factura),
 	 FK_Id_Usuario Integer not null,
 	 CONSTRAINT FK_ID_Usuario FOREIGN KEY (FK_Id_Usuario)
@@ -24,13 +23,9 @@ CREATE TABLE Producto
      ID_Producto INTEGER identity NOT NULL , 
      Nombre VARCHAR (150) NOT NULL , 
      Cantidad TINYINT NOT NULL , 
-     Factura_ID_Factura INTEGER 
+	 Proveedor TINYINT not null,
 	 primary key(ID_Producto),
-	 FK_ID_Factura integer not null,
-	 CONSTRAINT FK_ID_Factura FOREIGN KEY (FK_ID_Factura)
-        REFERENCES Factura (ID_Factura)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE
+	 
     )
 GO
 
@@ -98,12 +93,12 @@ CREATE procedure pa_CUD
 as
 if (@accion='1')
 begin
-    insert into Producto values (@ID_Producto, @Nombre, @Cantidad, @Factura_ID_Factura)
+    insert into Producto values (@Nombre, @Cantidad, @Factura_ID_Factura)
     set @accion = 'Se inserto correctamente'
 end
 else if (@accion='2')
 begin
-    update Producto set Nombre = @Nombre, Cantidad = @Cantidad, Factura_ID_Factura = @Factura_ID_Factura
+    update Producto set Nombre = @Nombre, Cantidad = @Cantidad, FK_ID_Factura = @Factura_ID_Factura
     where ID_Producto = @ID_Producto
     set @accion = 'Se actualizo correctamente'
 end
@@ -123,6 +118,13 @@ drop table Fecha_InicioSesion
 drop table Usuario
 
 select * from Fecha_InicioSesion
+select * from Usuario
 delete from Fecha_InicioSesion
 insert into Usuario values ('Daniel', 'DAPQ')
 insert into Usuario values ('Andres', 'ACPG')
+
+ if object_id('pa_CUD') is not null
+  drop procedure pa_CUD;
+
+   if object_id('spLogin') is not null
+  drop procedure spLogin;
