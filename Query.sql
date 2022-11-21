@@ -76,6 +76,47 @@ end
 go
 
 
+create PROCEDURE pa_listar_productos 
+as
+begin
+    select * from Producto
+end
+
+create proc pa_buscar_producto
+@nombre varchar(40)
+as select * from Producto
+where Nombre like @nombre+'%'
+
+go
+
+CREATE procedure pa_CUD
+ @ID_Producto int,
+ @Nombre varchar (150),
+ @Cantidad tinyint,
+ @Factura_ID_Factura int,
+ @accion varchar (50) OUTPUT
+as
+if (@accion='1')
+begin
+    insert into Producto values (@ID_Producto, @Nombre, @Cantidad, @Factura_ID_Factura)
+    set @accion = 'Se inserto correctamente'
+end
+else if (@accion='2')
+begin
+    update Producto set Nombre = @Nombre, Cantidad = @Cantidad, Factura_ID_Factura = @Factura_ID_Factura
+    where ID_Producto = @ID_Producto
+    set @accion = 'Se actualizo correctamente'
+end
+else if (@accion='3')
+begin
+    delete from Producto where ID_Producto = @ID_Producto
+    set @accion = 'Se elimino correctamente'
+end
+go
+
+
+
+
 drop table Producto
 drop table Factura
 drop table Fecha_InicioSesion

@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Capa_Logica
 {
-    public class Class1
+    public class ClaseLogica
     {
+        public int ID_producto { get; set; }
+        public string Nombre { get; set; }
+        public int Cantidad { get; set; }
+
+        public int ID_factura { get; set; }
     }
 }
