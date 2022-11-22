@@ -11,7 +11,9 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 using Capa_Logica;
 using Capa_presentacion;
+using Capa_Datos;
 using System.Runtime.Remoting;
+using Microsoft.VisualBasic;
 
 namespace Proyecto_Final_Supermercado
 {
@@ -19,6 +21,11 @@ namespace Proyecto_Final_Supermercado
     {
         ClaseLogica objlog = new ClaseLogica();
         ClasePresentacion objpres = new ClasePresentacion();
+        String ProductosFactura = "";
+        static public String N_Cliente = "";
+        static public int cedula = 0;
+        ClaseDatos objdatos = new ClaseDatos();
+
         public frmPrincipal_Usuario()
         {
             InitializeComponent();
@@ -30,7 +37,8 @@ namespace Proyecto_Final_Supermercado
             objlog.ID_producto = Convert.ToInt32(txtID.Text);
             objlog.Nombre = txtnombre.Text;
             objlog.Cantidad = Convert.ToInt32(txtcantidad.Text);
-            objlog.ID_factura = Convert.ToInt32(txtfactura.Text);
+            objlog.Proveedor = txtProveedor.Text;
+            objlog.Precio = Convert.ToInt32(txtPrecio.Text);
             string men = objpres.N_CUD(objlog);
             MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -40,7 +48,8 @@ namespace Proyecto_Final_Supermercado
             txtID.Text = "0";
             txtnombre.Text = "";
             txtcantidad.Text = "0";
-            txtfactura.Text = "";
+            txtProveedor.Text = "";
+            txtPrecio.Text = "0";
             dataGridView1.DataSource = objpres.N_listar_productos();
         }
 
@@ -56,19 +65,36 @@ namespace Proyecto_Final_Supermercado
                 string user = FormLogin.NombreUsuario;
                 btnBuscar.Enabled = true;
                 btnBorrar.Enabled = false;
+                btnBorrar.BackColor = Color.White;
                 btnEditar.Enabled = false;
+                btnEditar.BackColor = Color.White;
                 btnAgregar.Enabled = false;
+                btnAgregar.BackColor = Color.White;
                 btnNuevo.Enabled = false;
+                btnNuevo.BackColor = Color.White;
+                btnAgregarFactura.Enabled = false;
+                btnAgregarFactura.BackColor = Color.White;
+                btnVerFactura.Enabled = false;
+                btnVerFactura.BackColor = Color.White;
                 labelUsuario.Text = user;
             }
             else
             {
                 string user = FormLogin.NombreUsuario;
                 btnBuscar.Enabled = true;
+                btnBuscar.BackColor = Color.FromArgb(51, 51, 255);
                 btnBorrar.Enabled = true;
+                btnBorrar.BackColor = Color.FromArgb(51, 51, 255);
                 btnEditar.Enabled = true;
+                btnEditar.BackColor = Color.FromArgb(51, 51, 255);
                 btnAgregar.Enabled = true;
+                btnAgregar.BackColor = Color.FromArgb(51, 51, 255);
                 btnNuevo.Enabled = true;
+                btnNuevo.BackColor = Color.FromArgb(51, 51, 255);
+                btnAgregarFactura.Enabled = true;
+                btnAgregarFactura.BackColor = Color.FromArgb(51, 51, 255);
+                btnVerFactura.Enabled = true;
+                btnVerFactura.BackColor = Color.FromArgb(51, 51, 255);
                 labelUsuario.Text = user;
             }
             dataGridView1.DataSource = objpres.N_listar_productos();
@@ -110,7 +136,8 @@ namespace Proyecto_Final_Supermercado
             txtID.Text = dataGridView1[0, fila].Value.ToString();
             txtnombre.Text = dataGridView1[1, fila].Value.ToString();
             txtcantidad.Text = dataGridView1[2, fila].Value.ToString();
-            txtfactura.Text = dataGridView1[3, fila].Value.ToString();
+            txtProveedor.Text = dataGridView1[3, fila].Value.ToString();
+            txtPrecio.Text = dataGridView1[4, fila].Value.ToString();
 
         }
 
@@ -179,6 +206,58 @@ namespace Proyecto_Final_Supermercado
                 }
 
             }
+        }
+
+        private void btnAgregarFactura_Click(object sender, EventArgs e)
+        {
+            if (N_Cliente == "")
+            {
+                string message, title, defaultValue;
+                object myValue;
+
+                string message1, title1, defaultValue1;
+                object myValue1;
+
+                message = "Ingrese el nombre del cliente";
+                title = "Nombre del cliente";
+                defaultValue = "Cliente";
+
+                message1 = "Ingrese la cédula del cliente";
+                title1 = "Cédula del cliente";
+                defaultValue1 = "000000000";
+
+                myValue1 = Interaction.InputBox(message1, title1, defaultValue1);
+
+                myValue = Interaction.InputBox(message, title, defaultValue);
+                if (myValue.ToString() == "" || myValue1.ToString() == "")
+                {
+                    MessageBox.Show("No se ingreso ningun nombre");
+                }
+                else
+                {
+                    N_Cliente = myValue.ToString();
+                    cedula = Convert.ToInt32(myValue1.ToString());
+                    
+                }
+            }
+            
+            ProductosFactura = ProductosFactura + txtnombre.Text + 
+                               " - Cantidad: 1 - Precio: " + "$" + 
+                               txtPrecio.Text + Environment.NewLine;
+            DateTime fecha = DateTime.Now;
+
+
+
+            objdatos.registroEnFactura(fecha, ProductosFactura, N_Cliente, cedula);
+            MessageBox.Show("Producto registrado en factura con exito");
+        }
+
+        private void btnVerFactura_Click(object sender, EventArgs e)
+        {
+            FormFactura factura = new FormFactura();
+            
+
+            factura.Show();
         }
     }
 }

@@ -9,13 +9,11 @@
      ID_Factura INTEGER identity NOT NULL , 
      Fecha_Generada_Factura DATE NOT NULL , 
      Productos VARCHAR (max) NOT NULL , 
+	 Nombre_Cliente varchar (100) not null,
+	 cedula int not null,
 	 primary key(ID_Factura),
-	 FK_Id_Usuario Integer not null,
-	 CONSTRAINT FK_ID_Usuario FOREIGN KEY (FK_Id_Usuario)
-        REFERENCES Usuario (ID)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE
-    )
+	 )
+	 
 GO
 
 CREATE TABLE Producto 
@@ -23,7 +21,8 @@ CREATE TABLE Producto
      ID_Producto INTEGER identity NOT NULL , 
      Nombre VARCHAR (150) NOT NULL , 
      Cantidad TINYINT NOT NULL , 
-	 Proveedor TINYINT not null,
+	 Proveedor varchar (100) not null,
+	 Precio Int not null,
 	 primary key(ID_Producto),
 	 
     )
@@ -88,17 +87,18 @@ CREATE procedure pa_CUD
  @ID_Producto int,
  @Nombre varchar (150),
  @Cantidad tinyint,
- @Factura_ID_Factura int,
+ @Proveedor varchar (150),
+ @Precio int,
  @accion varchar (50) OUTPUT
 as
 if (@accion='1')
 begin
-    insert into Producto values (@Nombre, @Cantidad, @Factura_ID_Factura)
+    insert into Producto values (@Nombre, @Cantidad, @Proveedor,@Precio)
     set @accion = 'Se inserto correctamente'
 end
 else if (@accion='2')
 begin
-    update Producto set Nombre = @Nombre, Cantidad = @Cantidad, FK_ID_Factura = @Factura_ID_Factura
+    update Producto set Nombre = @Nombre, Cantidad = @Cantidad, Proveedor = @Proveedor, Precio = @Precio
     where ID_Producto = @ID_Producto
     set @accion = 'Se actualizo correctamente'
 end
@@ -109,7 +109,25 @@ begin
 end
 go
 
+create procedure spRegistroEnFactura
+     @Fecha_Generada_Factura DATE, 
+     @Productos VARCHAR (max), 
+	 @Nombre_Cliente varchar (100),
+	 @cedula int
+ as
+ begin
+	insert into Factura values (@Fecha_Generada_Factura, @Productos,@Nombre_Cliente, @cedula)
+		
+end
+go
 
+create PROCEDURE pa_listar_productosFactura 
+	@nombre_cliente varchar (100)
+as
+begin
+    select cedula, Fecha_Generada_Factura, Productos from Factura
+	where @nombre_cliente = Nombre_Cliente
+end
 
 
 drop table Producto
@@ -119,12 +137,22 @@ drop table Usuario
 
 select * from Fecha_InicioSesion
 select * from Usuario
+select * from Producto
+select * from Factura
+
 delete from Fecha_InicioSesion
 insert into Usuario values ('Daniel', 'DAPQ')
 insert into Usuario values ('Andres', 'ACPG')
+
+insert into Producto values ('chocorramo', 5, 'ramo', 5000)
 
  if object_id('pa_CUD') is not null
   drop procedure pa_CUD;
 
    if object_id('spLogin') is not null
   drop procedure spLogin;
+
+if object_id('spRegistroEnFactura') is not null
+  drop procedure spRegistroEnFactura;
+
+
