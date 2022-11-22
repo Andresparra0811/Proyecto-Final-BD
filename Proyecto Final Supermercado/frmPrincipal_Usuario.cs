@@ -14,6 +14,7 @@ using Capa_presentacion;
 using Capa_Datos;
 using System.Runtime.Remoting;
 using Microsoft.VisualBasic;
+using System.Data.SqlTypes;
 
 namespace Proyecto_Final_Supermercado
 {
@@ -35,6 +36,7 @@ namespace Proyecto_Final_Supermercado
         void CUD(string accion)
         {
             if (restaFactura == false) {
+                
                 objlog.accion = accion;
                 objlog.ID_producto = Convert.ToInt32(txtID.Text);
                 objlog.Nombre = txtnombre.Text;
@@ -46,10 +48,12 @@ namespace Proyecto_Final_Supermercado
             }
             else
             {
+                int cant = Convert.ToInt32(txtcantidad.Text) - 1;
+                //MessageBox.Show("Cant: " + cant.ToString(), "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 objlog.accion = accion;
                 objlog.ID_producto = Convert.ToInt32(txtID.Text);
                 objlog.Nombre = txtnombre.Text;
-                objlog.Cantidad = Convert.ToInt32(txtcantidad.Text) - 1;
+                objlog.Cantidad = cant;
                 objlog.Proveedor = txtProveedor.Text;
                 objlog.Precio = Convert.ToInt32(txtPrecio.Text);
                 string men = objpres.N_CUD(objlog);
@@ -266,6 +270,8 @@ namespace Proyecto_Final_Supermercado
             objdatos.registroEnFactura(fecha, ProductosFactura, N_Cliente, cedula);
             ProductosFactura = "";
             MessageBox.Show("Producto registrado en factura con exito");
+            CUD("2");
+            limpiar();
         }
 
         private void btnVerFactura_Click(object sender, EventArgs e)
