@@ -69,7 +69,7 @@ En caso de que el usuario ingrese como invitado logrará navegar por el inventar
 <img src="![image](https://user-images.githubusercontent.com/110069461/203174142-a6f23b57-ac22-4086-862c-60c6ee65e05e.png)
 " width="500">
 
-???
+
 
 # MER
 
@@ -121,18 +121,14 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 
 # Desarrollo Proyecto
 
-### A continuación se expondrá el desarrollo y la demostración del proyecto:
 
-<p align="center">
-<img src="" width="500">
-</p>
 
-???
+
 
 ### Inicio Invitado
 
 <p align="center">
-<img src="" width="500">
+<img src="Img/invitado.png" width="500">
 </p>
 
 En el inicio de sesión como invitado se muestra como se deshabilitan algunos botones debido a los permisos del usuario.
@@ -143,7 +139,7 @@ En el inicio de sesión como invitado se muestra como se deshabilitan algunos bo
 ### Acceso Satisfactorio
 
 <p align="center">
-<img src="" width="500">
+<img src="Img/login.png" width="500">
 </p>
 
 Cuando se ingresa un usuario adecuado se muestra el nombre del usuario en la parte superior junto con todos los botones habilitados
@@ -153,13 +149,11 @@ Cuando se ingresa un usuario adecuado se muestra el nombre del usuario en la par
 ### Inicio Admin
 
 <p align="center">
-<img src="" width="500">
+<img src="Img/administrador.png" width="500">
 </p>
 
 Cuando se inicia sesión como administrador el usuario cuenta con todos los botones habilitados 
 
-
-??
 
 ### Búsqueda Admin
 
