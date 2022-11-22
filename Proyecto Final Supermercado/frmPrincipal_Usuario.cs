@@ -24,6 +24,7 @@ namespace Proyecto_Final_Supermercado
         String ProductosFactura = "";
         static public String N_Cliente = "";
         static public int cedula = 0;
+        static public bool restaFactura = false;
         ClaseDatos objdatos = new ClaseDatos();
 
         public frmPrincipal_Usuario()
@@ -33,14 +34,28 @@ namespace Proyecto_Final_Supermercado
 
         void CUD(string accion)
         {
-            objlog.accion = accion;
-            objlog.ID_producto = Convert.ToInt32(txtID.Text);
-            objlog.Nombre = txtnombre.Text;
-            objlog.Cantidad = Convert.ToInt32(txtcantidad.Text);
-            objlog.Proveedor = txtProveedor.Text;
-            objlog.Precio = Convert.ToInt32(txtPrecio.Text);
-            string men = objpres.N_CUD(objlog);
-            MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (restaFactura == false) {
+                objlog.accion = accion;
+                objlog.ID_producto = Convert.ToInt32(txtID.Text);
+                objlog.Nombre = txtnombre.Text;
+                objlog.Cantidad = Convert.ToInt32(txtcantidad.Text);
+                objlog.Proveedor = txtProveedor.Text;
+                objlog.Precio = Convert.ToInt32(txtPrecio.Text);
+                string men = objpres.N_CUD(objlog);
+                MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                objlog.accion = accion;
+                objlog.ID_producto = Convert.ToInt32(txtID.Text);
+                objlog.Nombre = txtnombre.Text;
+                objlog.Cantidad = Convert.ToInt32(txtcantidad.Text) - 1;
+                objlog.Proveedor = txtProveedor.Text;
+                objlog.Precio = Convert.ToInt32(txtPrecio.Text);
+                string men = objpres.N_CUD(objlog);
+                MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
 
         }
         void limpiar()
@@ -246,9 +261,10 @@ namespace Proyecto_Final_Supermercado
                                txtPrecio.Text + Environment.NewLine;
             DateTime fecha = DateTime.Now;
 
-
-
+            fecha.ToString("dd/MM/yyyy hh:mm:ss");
+            restaFactura = true;
             objdatos.registroEnFactura(fecha, ProductosFactura, N_Cliente, cedula);
+            ProductosFactura = "";
             MessageBox.Show("Producto registrado en factura con exito");
         }
 

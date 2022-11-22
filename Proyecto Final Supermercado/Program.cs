@@ -14,6 +14,7 @@ namespace Proyecto_Final_Supermercado
         /// 
         public static FormLogin formularioPrincipal;
        
+
         [STAThread]
         static void Main()
         {
