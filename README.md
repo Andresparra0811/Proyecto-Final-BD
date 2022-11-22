@@ -138,7 +138,7 @@ Cuando se ingresa un usuario adecuado se muestra el nombre del usuario en la par
 ### Inicio Admin
 
 <p align="center">
-<img src="Img/Menu_principal.png" width="500">
+<img src="Img/Menu_Principal.png" width="500">
 </p>
 
 Cuando se inicia sesión como administrador el usuario cuenta con todos los botones habilitados. A partir de este punto el usuario administrador puede interactuar con los productos de la base de datos y generar una factura a partir de los productos seleccionados. Para poder generar esta factura se debe ingresar la cédula y el nombre del cliente que hizo la solicitud de los productos.
