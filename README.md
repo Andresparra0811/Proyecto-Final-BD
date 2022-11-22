@@ -170,8 +170,10 @@ Cuando se inicia sesión como administrador el usuario cuenta con todos los boto
 Se puede observar como busca los productos por coincidencia en el valor ingresado
 
 <p align="center">
-<img src="" width="500">
+<img src="Img/Factura.png" width="500">
 </p>
+
+Al final se puede generar una factura con el nombre del cliente y su cédula mostrando en una tabla los productos que se desean agregar a la factura.
 
 ### Conclusiones 
 
