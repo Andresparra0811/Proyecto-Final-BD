@@ -53,7 +53,8 @@ Como servidor de bases de datos se tiene Microsoft SQL server, el cual permite a
 
 
 # Necesidad
-El proyecto se crea a partir de la necesidad de tener un control de gestión de inventarios para poder manejar el stock de los diferentes productos además de generar una serie de facturas que facilitaran las operaciones de logística y facturación del supermercado.
+
+??
 
 # Interfaz gráfica
 
@@ -66,11 +67,10 @@ La interfaz inicia con un login de usuario y contraseña para poder ingresar al 
 En caso de que el usuario ingrese como invitado logrará navegar por el inventario y podrá buscar los productos para ver la información de cada uno, sin embargo, no tendrá permiso de insertar, eliminar o modificar ningún producto del supermercado.
 
 <p align="center">
-<img src="![image](https://user-images.githubusercontent.com/110069461/203174142-a6f23b57-ac22-4086-862c-60c6ee65e05e.png)
-" width="500">
+<img src="" width="500">
 </p>
 
-
+???
 
 # MER
 
@@ -82,26 +82,8 @@ El modelo entidad-relación del proyecto se muestra a continuación:
 
 # Arquitectura de Software
 
-Se utilizó la arquitectura de software en 3 capas. Este con el fín de separar las aplicacipnes en 3 niveles de forma lógica y física. Es una arquitectura ideal para aplicaciones cliente-servidor tradicionales
+??
 
-<p align="center">
-<img src="https://github.com/Daniel-AlfonsoPQ/Proyecto-Final-BD/blob/ea383bc69e0343bfed6717bd2bcf2497edb0e3ec/Img/arquitectura.jpg" width="500">
-</p>
-
-<h2>Capa Logica</h2>
-En esta capa encontramos las columnas de la tabla producto para poder utilizar estos datos en la capa datos.
-<p align="center">
-<img src="" width="500">
-</p>
-
-<h2>Capa Datos</h2>
-En esta capa encontramos los procedimientos almacenados que se van a utilizar en la capa de negocios.Esta capa cuenta con una referencia a la clase lógica
-<p align="center">
-<img src="" width="500">
-</p>
-
-<h2>Capa Presentacion</h2>
-La capa de presentación es la que ve el usuario , presenta el sistema al usuario, le comunica la información y captura la información del usuario en un mínimo proceso. 
 <p align="center">
 <img src="" width="500">
 </p>
@@ -125,7 +107,13 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 
 # Desarrollo Proyecto
 
+### A continuación se expondrá el desarrollo y la demostración del proyecto:
 
+<p align="center">
+<img src="" width="500">
+</p>
+
+???
 
 ### Inicio Invitado
 
@@ -133,7 +121,10 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 <img src="" width="500">
 </p>
 
-En el inicio de sesión como invitado se muestra como se deshabilitan algunos botones debido a los permisos del usuario.
+??
+
+??
+
 
 ### Acceso Satisfactorio
 
@@ -141,7 +132,9 @@ En el inicio de sesión como invitado se muestra como se deshabilitan algunos bo
 <img src="" width="500">
 </p>
 
-Cuando se ingresa un usuario adecuado se muestra el nombre del usuario en la parte superior junto con todos los botones habilitados
+???
+
+??
 
 ### Inicio Admin
 
@@ -149,7 +142,10 @@ Cuando se ingresa un usuario adecuado se muestra el nombre del usuario en la par
 <img src="" width="500">
 </p>
 
-Cuando se inicia sesión como administrador el usuario cuenta con todos los botones habilitados 
+??
+
+
+??
 
 ### Búsqueda Admin
 
@@ -157,7 +153,7 @@ Cuando se inicia sesión como administrador el usuario cuenta con todos los boto
 <img src="" width="500">
 </p>
 
-Se puede observar como busca los productos por coincidencia en el valor ingresado
+??
 
 <p align="center">
 <img src="" width="500">
@@ -166,7 +162,7 @@ Se puede observar como busca los productos por coincidencia en el valor ingresad
 ### Conclusiones 
 
 Gracias al programa desarrollado se llegó a las siguientes conclusiones:<br>
-•	La arquitectura de 3 capas facilita el diseño y desarrollo de programas cliente-servidor. <br>
-•	El uso de bases de datos contribuye al business intelligence <br>
-•	Visual estudio facilita la creación de aplicaciones de escritorio <br>
+•	?? <br>
+•	?? <br>
+•	?? <br>
 

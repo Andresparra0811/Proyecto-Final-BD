@@ -35,13 +35,18 @@
             this.labelUsuario = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnVerFactura = new System.Windows.Forms.Button();
+            this.btnAgregarFactura = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtbusqueda = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtfactura = new System.Windows.Forms.TextBox();
+            this.txtProveedor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtcantidad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,7 +68,7 @@
             // 
             // btnCerrarSesion
             // 
-            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(129)))), ((int)(((byte)(228)))));
+            this.btnCerrarSesion.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCerrarSesion.Location = new System.Drawing.Point(1255, 14);
@@ -105,10 +110,14 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.splitContainer1.Panel1.Controls.Add(this.dataGridView1);
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnVerFactura);
+            this.splitContainer1.Panel2.Controls.Add(this.btnAgregarFactura);
+            this.splitContainer1.Panel2.Controls.Add(this.label5);
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
             this.splitContainer1.Panel2.Controls.Add(this.btnNuevo);
@@ -146,13 +155,55 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // btnVerFactura
+            // 
+            this.btnVerFactura.AutoSize = true;
+            this.btnVerFactura.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnVerFactura.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnVerFactura.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerFactura.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnVerFactura.Location = new System.Drawing.Point(0, 430);
+            this.btnVerFactura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVerFactura.Name = "btnVerFactura";
+            this.btnVerFactura.Size = new System.Drawing.Size(539, 43);
+            this.btnVerFactura.TabIndex = 16;
+            this.btnVerFactura.Text = "Ver factura";
+            this.btnVerFactura.UseVisualStyleBackColor = false;
+            this.btnVerFactura.Click += new System.EventHandler(this.btnVerFactura_Click);
+            // 
+            // btnAgregarFactura
+            // 
+            this.btnAgregarFactura.AutoSize = true;
+            this.btnAgregarFactura.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnAgregarFactura.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnAgregarFactura.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarFactura.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAgregarFactura.Location = new System.Drawing.Point(0, 473);
+            this.btnAgregarFactura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAgregarFactura.Name = "btnAgregarFactura";
+            this.btnAgregarFactura.Size = new System.Drawing.Size(539, 43);
+            this.btnAgregarFactura.TabIndex = 15;
+            this.btnAgregarFactura.Text = "Agregar a la Factura";
+            this.btnAgregarFactura.UseVisualStyleBackColor = false;
+            this.btnAgregarFactura.Click += new System.EventHandler(this.btnAgregarFactura_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(107, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(324, 39);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "MENU PRINCIPAL";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtbusqueda);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox2.Location = new System.Drawing.Point(8, 394);
+            this.groupBox2.Location = new System.Drawing.Point(6, 352);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -185,23 +236,45 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtPrecio);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtfactura);
+            this.groupBox1.Controls.Add(this.txtProveedor);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtcantidad);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtnombre);
             this.groupBox1.Controls.Add(this.txtID);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(8, 117);
+            this.groupBox1.Location = new System.Drawing.Point(10, 94);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(529, 224);
+            this.groupBox1.Size = new System.Drawing.Size(529, 250);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Producto";
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.Location = new System.Drawing.Point(131, 199);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(356, 23);
+            this.txtPrecio.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(8, 201);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 17);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "PRECIO";
             // 
             // label7
             // 
@@ -225,14 +298,14 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "NOMBRE";
             // 
-            // txtfactura
+            // txtProveedor
             // 
-            this.txtfactura.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfactura.Location = new System.Drawing.Point(131, 159);
-            this.txtfactura.Margin = new System.Windows.Forms.Padding(4);
-            this.txtfactura.Name = "txtfactura";
-            this.txtfactura.Size = new System.Drawing.Size(356, 23);
-            this.txtfactura.TabIndex = 21;
+            this.txtProveedor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProveedor.Location = new System.Drawing.Point(131, 159);
+            this.txtProveedor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProveedor.Name = "txtProveedor";
+            this.txtProveedor.Size = new System.Drawing.Size(356, 23);
+            this.txtProveedor.TabIndex = 21;
             // 
             // label3
             // 
@@ -263,7 +336,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 17);
             this.label4.TabIndex = 15;
-            this.label4.Text = "FACTURA_ID";
+            this.label4.Text = "PROVEEDOR";
             // 
             // txtnombre
             // 
@@ -290,6 +363,7 @@
             this.btnNuevo.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnNuevo.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnNuevo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnNuevo.Location = new System.Drawing.Point(0, 516);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNuevo.Name = "btnNuevo";
@@ -305,6 +379,7 @@
             this.btnAgregar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnAgregar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnAgregar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAgregar.Location = new System.Drawing.Point(0, 559);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregar.Name = "btnAgregar";
@@ -320,6 +395,7 @@
             this.btnEditar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnEditar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnEditar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEditar.Location = new System.Drawing.Point(0, 602);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditar.Name = "btnEditar";
@@ -335,6 +411,7 @@
             this.btnBorrar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnBorrar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnBorrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBorrar.Location = new System.Drawing.Point(0, 646);
             this.btnBorrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBorrar.Name = "btnBorrar";
@@ -350,6 +427,7 @@
             this.btnBuscar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnBuscar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscar.Location = new System.Drawing.Point(0, 685);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
@@ -406,12 +484,17 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtfactura;
+        private System.Windows.Forms.TextBox txtProveedor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtcantidad;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAgregarFactura;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnVerFactura;
     }
 }

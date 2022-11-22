@@ -72,7 +72,7 @@ namespace Proyecto_Final_Supermercado
                 comando.Parameters.AddWithValue("@usuario", usuario);
                 comando.Parameters.AddWithValue("@fecha", fecha);
 
-                
+
 
                 if (conexion.State == ConnectionState.Open) conexion.Close();
                 conexion.Open();

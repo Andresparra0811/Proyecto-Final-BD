@@ -13,6 +13,7 @@ namespace Proyecto_Final_Supermercado
         /// </summary>
         /// 
         public static FormLogin formularioPrincipal;
+       
         [STAThread]
         static void Main()
         {
@@ -20,6 +21,7 @@ namespace Proyecto_Final_Supermercado
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormLogin());
             Application.Run(formularioPrincipal =  new FormLogin());
+            
         }
     }
 }

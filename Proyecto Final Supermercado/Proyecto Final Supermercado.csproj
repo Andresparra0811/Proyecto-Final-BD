@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -53,6 +54,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFactura.Designer.cs">
+      <DependentUpon>FormFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +71,9 @@
     <Compile Include="SQL-Control Login.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFactura.resx">
+      <DependentUpon>FormFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal_Usuario.resx">
       <DependentUpon>frmPrincipal_Usuario.cs</DependentUpon>
@@ -107,6 +117,10 @@
     <None Include="Resources\facebook_cover_photo_1.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Capa_Datos\Capa_Datos.csproj">
+      <Project>{93991b97-2758-4a1e-985e-810ae3dac66f}</Project>
+      <Name>Capa_Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Capa_Logica\Capa_Logica.csproj">
       <Project>{72318efd-cbfa-4891-9030-17344323ac8e}</Project>
       <Name>Capa_Logica</Name>
@@ -115,6 +129,9 @@
       <Project>{3dc64577-bc67-4c70-9fd9-bc2284af1f16}</Project>
       <Name>Capa_presentacion</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_cover_photo_11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

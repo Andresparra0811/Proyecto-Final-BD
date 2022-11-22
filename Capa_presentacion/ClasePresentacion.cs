@@ -28,5 +28,7 @@ namespace Capa_presentacion
             return objd.D_CUD(obje);
 
         }
+
+        
     }
 }

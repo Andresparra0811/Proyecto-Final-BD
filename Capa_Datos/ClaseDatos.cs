@@ -45,9 +45,8 @@ namespace Capa_Datos
             cmd.Parameters.AddWithValue("@ID_producto", objeto.ID_producto);
             cmd.Parameters.AddWithValue("@Nombre", objeto.Nombre);
             cmd.Parameters.AddWithValue("@Cantidad", objeto.Cantidad);
-            cmd.Parameters.AddWithValue("@Factura_ID_Factura", objeto.ID_factura);
-            
-
+            cmd.Parameters.AddWithValue("@Proveedor", objeto.Proveedor);
+            cmd.Parameters.AddWithValue("@Precio", objeto.Precio);
 
             cmd.Parameters.Add("@accion", SqlDbType.VarChar, 50).Value = objeto.accion;
             cmd.Parameters["@accion"].Direction = ParameterDirection.InputOutput;
@@ -58,13 +57,42 @@ namespace Capa_Datos
             cn.Close();
             return accion;
 
+        }
 
+        public void registroEnFactura(DateTime fecha, string Productos,
+            string NombreCliente, int Cedula)
+        {
+
+            
+                SqlCommand cmd = new SqlCommand("spRegistroEnFactura", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@Fecha_Generada_Factura", fecha);
+                cmd.Parameters.AddWithValue("@Productos", Productos);
+                cmd.Parameters.AddWithValue("@Nombre_Cliente", NombreCliente);
+                cmd.Parameters.AddWithValue("@cedula", Cedula);
+                
+                if (cn.State == ConnectionState.Open) cn.Close();
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                cn.Close();
+            
+        }
+        
+        public DataTable D_listar_productosFactura(string nombre)
+        {
+            
+
+            SqlCommand cmd = new SqlCommand("pa_listar_productosFactura", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            
+            cmd.Parameters.AddWithValue("@nombre_cliente", nombre);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
 
 
         }
-
-
-
-
     }
 }
