@@ -121,7 +121,7 @@ El proyecto utilizará la metodología ágil, ya que con estos métodos es posib
 ### Inicio Invitado
 
 <p align="center">
-<img src="Img/invitado.png" width="500">
+<img src="Img/invitado.jpeg" width="500">
 </p>
 
 En el inicio de sesión como invitado se muestra como se deshabilitan algunos botones debido a los permisos del usuario.
@@ -142,7 +142,7 @@ Cuando se ingresa un usuario adecuado se muestra el nombre del usuario en la par
 ### Inicio Admin
 
 <p align="center">
-<img src="Img/administrador.png" width="500">
+<img src="Img/administrador.jpeg" width="500">
 </p>
 
 Cuando se inicia sesión como administrador el usuario cuenta con todos los botones habilitados 
